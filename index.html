@@ -1,12 +1,25 @@
 <html>
-<head>
-<title>Patient Medical Record</title>
-</head>
-    <body>
-	<p><a href="hospital.html"><button type="submit" class="hidden" style='margin-right:16px'>Hospital Registration</button></a><a href="doctor.html"><button type="submit" class="hidden" style='margin-right:16px'>Doctor Registration</button></a><a href="patient.html"><button type="submit" class="hidden" style='margin-right:16px'>Patient Registration</button></a><a href="patient_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Details</button></a><a href="record_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Medical Record</button></a><a href="examine_details.html"><button type="submit" class="hidden" style='margin-right:16px'>View Patient Examine details</button></a></p>
-      
-        <h1>Patient Medical Record </h1>
-        <script src="https://cdn.jsdelivr.net/npm/web3@1.2.8/dist/web3.js"></script>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <title>Patient Medical Record</title>
+  </head>
+  <body>
+    <p style="text-align: center;"><a href="doctor.html"><button type="submit" class="hidden"
+          style="margin-right:16px"></button></a><a href="patient.html" style="color: #33ffff;"><button
+          type="submit" class="hidden" style="margin-right:16px"><span style="color: #ff3873;"><span
+              style="color: #66ffff;"><span style="color: #7e7297;">Patient
+                Registration</span></span></span></button></a><span style="color: #ccffff;"><a
+          href="patient_details.html"><button type="submit" class="hidden" style="margin-right:16px"><span
+              style="color: #82769c;">View Patient Details</span></button></a><a
+          href="record_details.html"><button type="submit" class="hidden" style="margin-right:16px"><span
+              style="color: #82769c;">View Medical Record</span></button></a></span><a
+        href="examine_details.html"><button type="submit" class="hidden" style="margin-right:16px"><br>
+        </button></a></p>
+    <p style="text-align: center;"><img src="file:///C:/Users/mysec/Desktop/images/2925697.png"
+        alt="b" title="b" style="width: 208px; height: 208px;"> </p>
+    <h1 style="text-align: center;"><span style="color: #df171d;">Patient
+        Medical Record </span></h1>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.2.8/dist/web3.js"></script>
     <script>	
 	
 	var account;
@@ -932,158 +945,160 @@
         }
 		
         </script>
-
-       <h2>Previous dates of medical record updated</h2>
+    <h2>Previous dates of medical record updated:</h2>
     <form>
-		<table style="width:25%"> 
-            <tr>
-			<td>Enter Patient Id:</td>
-			<td><input type="text" id="id0" name="id0"></td>
-		  </tr>
-            <tr>
-			<td> Dates:</td>
-			<td><input type="text" id="dates1" name="dates1"></td>
-		  </tr>
-		  <tr>			
-		  <td><input type="button" onclick="prev_details()" value="Submit"></td>
-		  </tr>
-		</table>
-	</form>
-        <h2>Insurance Details</h2>
+      <table style="width:25%">
+        <tbody>
+          <tr>
+            <td>Enter Patient Id:</td>
+            <td><input id="id0" name="id0" type="text"></td>
+          </tr>
+          <tr>
+            <td> Dates:</td>
+            <td><input id="dates1" name="dates1" type="text"></td>
+          </tr>
+          <tr>
+            <td><input onclick="prev_details()" value="Submit" type="button"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <h2>Insurance Details</h2>
     <form>
-		<table style="width:25%"> 
-            <tr>
-			<td>Enter Record Id:</td>
-			<td><input type="text" id="id1" name="id1"></td>
-		  </tr>
-            <tr>
-			<td> Is Insurance applicable?(yes/no):</td>
-			<td><input type="text" id="appl" name="appl"></td>
-		  </tr>
-		  <tr>
-			<td>Policy Number:</td>
-			<td><input type="text" id="pono" name="pono"></td>
-		  </tr>
-		   
-		   <tr>
-			<td>Insurer:</td>
-			<td><input type="text" id="ins" name="ins"></td>
-		  </tr>
-            <tr>
-			<td>Policy Type:</td>
-			<td><input type="text" id="type" name="type"></td>
-		  </tr>
-		  <tr>
-			<td>Policy Limit:</td>
-			<td><input type="text" id="lim" name="lim"></td>
-		  </tr>           
-		  
-		</table>
-		
-		
-	</form>
-	<h2> Present Illness Details</h2>
+      <table style="width:25%">
+        <tbody>
+          <tr>
+            <td>Enter Record Id:</td>
+            <td><input id="id1" name="id1" type="text"></td>
+          </tr>
+          <tr>
+            <td> Is Insurance applicable?(yes/no):</td>
+            <td><input id="appl" name="appl" type="text"></td>
+          </tr>
+          <tr>
+            <td>Policy Number:</td>
+            <td><input id="pono" name="pono" type="text"></td>
+          </tr>
+          <tr>
+            <td>Insurer:</td>
+            <td><input id="ins" name="ins" type="text"></td>
+          </tr>
+          <tr>
+            <td>Policy Type:</td>
+            <td><input id="type" name="type" type="text"></td>
+          </tr>
+          <tr>
+            <td>Policy Limit:</td>
+            <td><input id="lim" name="lim" type="text"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <h2> Present Illness Details</h2>
     <form>
-		<table style="width:25%"> 
-            <tr>
-			<td>Enter Record Id:</td>
-			<td><input type="text" id="id2" name="id2"></td>
-		  </tr>
-            <tr>
-			<td> Complaints:</td>
-			<td><input type="text" id="com" name="com"></td>
-		  </tr>
-		  <tr>
-			<td>Duation:</td>
-			<td><input type="text" id="dur" name="dur"></td>
-		  </tr>
-		</table>
-		
-	</form>
-	<h2> Past Illness Details</h2>
+      <table style="width:25%">
+        <tbody>
+          <tr>
+            <td>Enter Record Id:</td>
+            <td><input id="id2" name="id2" type="text"></td>
+          </tr>
+          <tr>
+            <td> Complaints:</td>
+            <td><input id="com" name="com" type="text"></td>
+          </tr>
+          <tr>
+            <td>Duration:</td>
+            <td><input id="dur" name="dur" type="text"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <h2> Past Illness Details</h2>
     <form>
-		<table style="width:25%"> 
-            <tr>
-			<td>Enter Record Id:</td>
-			<td><input type="text" id="id3" name="id3"></td>
-		  </tr>
-            <tr>
-			<td> Family History:</td>
-			<td><input type="text" id="fam" name="fam"></td>
-		  </tr>
-		  <tr>
-			<td>Personal History:</td>
-			<td><input type="text" id="per" name="per"></td>
-		  </tr>
-		  <tr>
-			<td>Drug History:</td>
-			<td><input type="text" id="drug" name="drug"></td>
-		  </tr>
-		</table>
-		
-	</form>
-	<h2>Provisional Diagnosis Details</h2>
+      <table style="width:25%">
+        <tbody>
+          <tr>
+            <td>Enter Record Id:</td>
+            <td><input id="id3" name="id3" type="text"></td>
+          </tr>
+          <tr>
+            <td> Family History:</td>
+            <td><input id="fam" name="fam" type="text"></td>
+          </tr>
+          <tr>
+            <td>Personal History:</td>
+            <td><input id="per" name="per" type="text"></td>
+          </tr>
+          <tr>
+            <td>Drug History:</td>
+            <td><input id="drug" name="drug" type="text"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <h2>Provisional Diagnosis Details</h2>
     <form>
-		<table style="width:25%"> 
-            <tr>
-			<td>Enter Record Id:</td>
-			<td><input type="text" id="id4" name="id4"></td>
-		  </tr>
-            <tr>
-			<td> Diagnosis Summary:</td>
-			<td><input type="text" id="diag" name="diag"></td>
-		  </tr>
-		  <tr>
-			<td>Prescription:</td>
-			<td><input type="text" id="pre" name="pre"></td>
-		  </tr>
-		</table>
-		
-	</form>
-	
-        <h2>Treatment Summary</h2>
+      <table style="width:25%">
+        <tbody>
+          <tr>
+            <td>Enter Record Id:</td>
+            <td><input id="id4" name="id4" type="text"></td>
+          </tr>
+          <tr>
+            <td> Diagnosis Summary:</td>
+            <td><input id="diag" name="diag" type="text"></td>
+          </tr>
+          <tr>
+            <td>Prescription:</td>
+            <td><input id="pre" name="pre" type="text"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <h2>Treatment Summary</h2>
     <form>
-		<table style="width:25%"> 
-            <tr>
-			<td>Enter Record Id:</td>
-			<td><input type="text" id="id5" name="id5"></td>
-		  </tr>
-            <tr>
-			<td> Treatment:</td>
-			<td><input type="text" id="treat" name="treat"></td>
-		  </tr>
-		  <tr>
-			<td>Date of Treatment:</td>
-			<td><input type="text" id="date" name="date"></td>
-		  </tr>
-		   
-		   <tr>
-			<td>Treated Doctor Id:</td>
-			<td><input type="text" id="doc" name="doc"></td>
-		  </tr>
-            <tr>
-			<td>Treated Hospital Id:</td>
-			<td><input type="text" id="hos" name="hos"></td>
-		  </tr>
-		  <tr>
-			<td>Discharge:</td>
-			<td><input type="text" id="dis" name="dis"></td>
-		  </tr>  
-			<tr>
-			<td>Follow Up:</td>
-			<td><input type="text" id="fol" name="fol"></td>
-		  </tr>	
-		</table>
-		
-	</form>
-        
-		 <form>
-		<table style="width:25%"> 
-		<tr>
-		  <td><input type="button" onclick="insu_details()" value="Submit"></td>
-		  </tr>
-		  </table>
-		
-	</form>
-    </body>
+      <table style="width: 222px; height: 241px;">
+        <tbody>
+          <tr>
+            <td>Enter Record Id:</td>
+            <td><input id="id5" name="id5" type="text"></td>
+          </tr>
+          <tr>
+            <td> Treatment:</td>
+            <td><input id="treat" name="treat" type="text"></td>
+          </tr>
+          <tr>
+            <td>Last treatment date:</td>
+            <td><input id="date" name="date" type="text"></td>
+          </tr>
+          <tr>
+            <td>Treated Doctor Id:</td>
+            <td><input id="doc" name="doc" type="text"></td>
+          </tr>
+          <tr>
+            <td>Treated Hospital Id:</td>
+            <td><input id="hos" name="hos" type="text"></td>
+          </tr>
+          <tr>
+            <td>Hospital No:</td>
+            <td><input id="dis" name="dis" type="text"></td>
+          </tr>
+          <tr>
+            <td>Pharmacy Id:</td>
+            <td><br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+    <form>
+      <table style="width:25%">
+        <tbody>
+          <tr>
+            <td><input onclick="insu_details()" value="Submit" type="button"></td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
 </html>
